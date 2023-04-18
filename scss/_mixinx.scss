@@ -1,0 +1,28 @@
+// extend
+.header {
+    height: 30vh;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-home {
+    @extend .header;
+    background-image: url(../images/header_home.jpg);
+}
+.body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: azure;
+}
+
+// mixins
+   @mixin textos($size, $line, $color, $padding){
+    font-family: $mainFont;
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    padding: $padding;
+   }
